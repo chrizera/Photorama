@@ -48,6 +48,11 @@ struct FlickrAPI {
         
         return components.url! as NSURL
     }
+    
+    static func recentPhotosURL() -> NSURL {
+        
+        return flickrURL(method: .recentPhotos, parameters: ["extras" : "url_h,date_taken"])
+    }
 
 }
 
