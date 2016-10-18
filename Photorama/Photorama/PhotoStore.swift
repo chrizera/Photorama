@@ -17,7 +17,7 @@ class PhotoStore {
         return URLSession(configuration: config)
     }()
     
-    func fetchRecentPhotos() {
+    func fetchRecentPhotos(completition: @escaping (PhotosResult) -> Void) {
         
         let url = FlickrAPI.recentPhotosURL()
         let request = NSURLRequest(url: url as URL)
@@ -25,20 +25,20 @@ class PhotoStore {
             
             (data, response, error) -> Void in
             
-            if let jsonData = data {
-                
-                if let jsonString = NSString(data: jsonData, encoding: String.Encoding.utf8.rawValue) {
-                    print(jsonString)
-                }
-            }
-            else if let requestError = error {
-                print("Error fetching recent photos: \(requestError)")
-            }
-            else {
-                print("Unexpected error with the request")
-            }
+           let result = self.processRecentPhotosRequest(data: data as NSData?, error: error)
+            
+           completition(result)
         }
         task.resume()
+    }
+    
+    func processRecentPhotosRequest(data: NSData?, error: Error?) -> PhotosResult {
+        
+        guard let jsonData = data else {
+            return .failure(error!)
+        }
+        
+        return FlickrAPI.photosFromJSONData(data: jsonData)
     }
     
 }
