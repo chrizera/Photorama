@@ -24,3 +24,10 @@ class Photo {
         self.dateTaken = dateTaken
     }
 }
+
+extension Photo: Equatable {}
+
+func == (lhs: Photo, rhs: Photo) -> Bool {
+    
+    return lhs.photoID == rhs.photoID
+}
