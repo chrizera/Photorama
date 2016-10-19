@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BD5104B31DB7D9D2005ABF53 /* PhotoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5104B21DB7D9D2005ABF53 /* PhotoDataSource.swift */; };
 		BD5104B51DB7E467005ABF53 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5104B41DB7E467005ABF53 /* PhotoCollectionViewCell.swift */; };
+		BD5104B71DB7F578005ABF53 /* PhotoInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5104B61DB7F578005ABF53 /* PhotoInfoViewController.swift */; };
 		BD9958091DB68412000CF02A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9958081DB68412000CF02A /* AppDelegate.swift */; };
 		BD99580E1DB68412000CF02A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD99580C1DB68412000CF02A /* Main.storyboard */; };
 		BD9958101DB68412000CF02A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD99580F1DB68412000CF02A /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		BD5104B21DB7D9D2005ABF53 /* PhotoDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDataSource.swift; sourceTree = "<group>"; };
 		BD5104B41DB7E467005ABF53 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		BD5104B61DB7F578005ABF53 /* PhotoInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoInfoViewController.swift; sourceTree = "<group>"; };
 		BD9958051DB68412000CF02A /* Photorama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Photorama.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD9958081DB68412000CF02A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD99580D1DB68412000CF02A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				BD9958141DB68412000CF02A /* Info.plist */,
 				BD99581A1DB6844D000CF02A /* PhotosViewController.swift */,
 				BD9958201DB69F71000CF02A /* Photo.swift */,
+				BD5104B61DB7F578005ABF53 /* PhotoInfoViewController.swift */,
 			);
 			path = Photorama;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 				BD99581F1DB69558000CF02A /* PhotoStore.swift in Sources */,
 				BD5104B31DB7D9D2005ABF53 /* PhotoDataSource.swift in Sources */,
 				BD5104B51DB7E467005ABF53 /* PhotoCollectionViewCell.swift in Sources */,
+				BD5104B71DB7F578005ABF53 /* PhotoInfoViewController.swift in Sources */,
 				BD9958091DB68412000CF02A /* AppDelegate.swift in Sources */,
 				BD9958211DB69F71000CF02A /* Photo.swift in Sources */,
 			);
